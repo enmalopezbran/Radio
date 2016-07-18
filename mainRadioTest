@@ -1,0 +1,168 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package radio;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ *
+ * @author amorales
+ */
+public class mainRadioTest {
+    
+    public mainRadioTest() {
+    }
+    
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+    
+    @Before
+    public void setUp() {
+    }
+    
+    @After
+    public void tearDown() {
+    }
+
+    @Test
+    public void testOnOff() {
+        System.out.println("OnOff");
+        Radio instance = new Radio();
+        instance.OnOff();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of isOn method, of class Radio.
+     */
+    @Test
+    public void testIsOn() {
+        System.out.println("isOn");
+        Radio instance = new Radio();
+        boolean expResult = false;
+        boolean result = instance.isOn();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getFrecuency method, of class Radio.
+     */
+    @Test
+    public void testGetFrecuency() {
+        System.out.println("getFrecuency");
+        Radio instance = new Radio();
+        String expResult = "530";
+        String result = instance.getFrecuency();
+        
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of changeFrecuency method, of class Radio.
+     */
+    @Test
+    public void testChangeFrecuency() {
+        System.out.println("changeFrecuency");
+        Radio instance = new Radio();
+        instance.changeFrecuency();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getStation method, of class Radio.
+     */
+    @Test
+    public void testGetStation() {
+        System.out.println("getStation");
+        Radio instance = new Radio();
+        String expResult = "";
+        String result = instance.getStation();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of Forward method, of class Radio.
+     */
+    @Test
+    public void testForward() {
+        System.out.println("Forward");
+        Radio instance = new Radio();
+        instance.Forward();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of Backward method, of class Radio.
+     */
+    @Test
+    public void testBackward() {
+        System.out.println("Backward");
+        Radio instance = new Radio();
+        instance.Backward();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setMemory method, of class Radio.
+     */
+    @Test
+    public void testReturnSetMemory() {
+        System.out.println("setMemory");
+        int Position = 0;
+        Radio instance = new Radio();
+        instance.setMemory(Position);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of ToString method, of class Radio.
+     */
+    @Test
+    public void testToString() {
+        System.out.println("ToString");
+        Radio instance = new Radio();
+        String expResult = "";
+        String result = instance.ToString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setMemory method, of class Radio.
+     */
+    @Test
+    public void testSetMemory() {
+        System.out.println("setMemory");
+        int Position = 0;
+        Radio instance = new Radio();
+        instance.setMemory(Position);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+    
+}
