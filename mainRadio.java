@@ -71,7 +71,6 @@ public class mainRadio {
                 
                 
                 
-                
             }else if (op == 5){
                 System.out.println("\nNumero de boton: ");
                 opBoton = dato.nextInt();
