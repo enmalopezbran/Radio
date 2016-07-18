@@ -29,19 +29,49 @@ public class mainRadio {
                     + "\n Escoja el numeral del boton que desea usar:   ");
             op = dato.nextInt();
             if (op == 1){
-                miRadio.OnOff();
+                 miRadio.OnOff();
+                miRadio.isOn = false;
+                System.out.println("/n La radio esta apagada");
+                System.out.println("/n Si desea encender (1) /n Si desea apagar(2)");
+                
                 boolean estado = miRadio.isOn();
-                if (estado = true){
+                opOnOff = dato.nextInt();
+                if (opOnOff == 1){
+                    estado = true;
                     System.out.println("La radio se encendio!");
                 }else{
+                    estado =false;
                     System.out.println("La radio se apago!");
                 }
             }else if (op == 2){
                 miRadio.changeFrecuency();
+                System.out.println("/n La radio esta en AM");
+                System.out.println("/n Si desea cambiar frecuencia AM (1) /n Si desea cambiar frecuencia FM(2)");
+                opFrecuency = dato.nextInt();
+                String frecuencia = miRadio.getFrecuency();
+               if (opFrecuency ==1){
+                   frecuencia = "AM";
+                   System.out.println("La radio esta en la frecuencia AM");
+               }else{
+                   frecuencia ="FM";
+                   System.out.println("La radio esta en la frecuencia FM");
+               } 
+                
             }else if (op == 3){
+                String station = miRadio.getStation();
                 miRadio.Forward();
+                System.out.println("La estacion que esta sonando es:" + station);
+                
+               
+                
             }else if (op == 4){
+                String station = miRadio.getStation();
                 miRadio.Backward();
+                System.out.println("La estacion que esta sonando es:" + station);
+                
+                
+                
+                
             }else if (op == 5){
                 System.out.println("\nNumero de boton: ");
                 opBoton = dato.nextInt();
@@ -70,5 +100,3 @@ public class mainRadio {
     }
         
     }
-    
-}
